@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      min-height: 100vh;
+    }
+
+    /* Navigation Bar */
+    .nav-bar {
+  background-color: #007acc;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.branding img {
+  height: 60px; /* Adjust size as needed */
+  width: auto;
+}
+
+.brand-name {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+    /* Signup Form Container */
+    .container {
+      width: 100%;
+      max-width: 500px;
+      background-color: white;
+      padding: 40px 35px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      margin: 40px auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #007acc;
+      margin-bottom: 25px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #007acc;
+      box-shadow: 0 0 5px rgba(0, 122, 204, 0.2);
+    }
+
+    /* Gender radio button section */
+    .gender-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .gender-options {
+      display: flex;
+      gap: 20px;
+      margin-top: 5px;
+    }
+
+    .gender-options label {
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    button {
+      background-color: #007acc;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #007acc;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Navigation -->
+ <div class="nav-bar">
+  <div class="branding">
+    <img src="images/Logo.jpg" alt="Fashion Hub Logo">
+    <span class="brand-name">Fashion Hub</span>
+  </div>
+  <nav>
+    <a href="about.html">About Us</a>
+    <a href="signup.html">Signup</a>
+    <a href="signin.html">Signin</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</div>
+
+
+  <!-- ✅ Signup Form -->
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" required>
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <div class="gender-container">
+        <label>Gender</label>
+        <div class="gender-options">
+          <label><input type="radio" name="gender" value="Male" required> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+          <label><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+      </div>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="2"></textarea>
+
+      <label for="state">State</label>
+      <input type="text" id="state" name="state">
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="city">
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <!-- ✅ Footer -->
+ <footer>
+    &copy; 2025 Fashion Hub | Designed by Shri Keerthanaa | Contact: fashionhub@email.com
+  </footer>
+
+</body>
+</html>

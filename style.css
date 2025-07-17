@@ -1,0 +1,135 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Form Container */
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 40px 35px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Page Title */
+h2 {
+  text-align: center;
+  color: #007acc;
+  margin-bottom: 25px;
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Label */
+label {
+  font-weight: bold;
+  margin: 10px 0 5px;
+  align-self: flex-start;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* Inputs, Selects, Textareas */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007acc;
+  box-shadow: 0 0 5px rgba(0, 122, 204, 0.2);
+}
+
+/* Gender section layout */
+.gender-options {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+  padding-left: 5px;
+}
+
+.gender-options label {
+  font-weight: normal;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+/* Submit Button */
+button {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #007acc;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Contact Info Box */
+.contact-info {
+  background-color: #e7f3ff;
+  padding: 15px;
+  border-left: 5px solid #007acc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Responsive Fix */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 14px;
+  }
+}

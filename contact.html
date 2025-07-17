@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    /* Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+    }
+
+    /* Navigation Bar */
+    .nav-bar {
+  background-color: #007acc;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.branding img {
+  height: 60px; /* Adjust size as needed */
+  width: auto;
+}
+
+.brand-name {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+    /* Contact Container */
+    .signup-container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .signup-container h2 {
+      text-align: center;
+      color: #007acc;
+      margin-bottom: 20px;
+    }
+
+    .signup-container p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .signup-container a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    .signup-container a:hover {
+      text-decoration: underline;
+    }
+
+    .signup-container form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    input,
+    textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #007acc;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Navigation -->
+  <div class="nav-bar">
+  <div class="branding">
+    <img src="images/Logo.jpg" alt="Fashion Hub Logo">
+    <span class="brand-name">Fashion Hub</span>
+  </div>
+  <nav>
+    <a href="about.html">About Us</a>
+    <a href="signup.html">Signup</a>
+    <a href="signin.html">Signin</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</div>
+
+
+  <!-- ✅ Contact Section -->
+  <div class="signup-container">
+    <h2>Contact Us</h2>
+
+    <div>
+      <p><strong>📍 Address:</strong> 123 Main Street, Coimbatore, Tamil Nadu - 641001</p>
+      <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+      <p><strong>✉️ Email:</strong> <a href="mailto:contact@Fashionhub.com">contact@Fashionhub.com</a></p>
+    </div>
+
+    <!-- ✅ Reference Section Title -->
+    <h3 style="text-align:center; color:#007acc; margin-top:30px; margin-bottom:15px;">REFERENCE</h3>
+
+    <!-- ✅ Contact Form -->
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- ✅ Footer -->
+  <footer>
+    &copy; 2025 Fashion Hub | Designed by Shri Keerthanaa | Contact: fashionhub@email.com
+  </footer>
+
+</body>
+</html>

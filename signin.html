@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .nav-bar {
+      background-color: #007acc;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    .branding {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .branding img {
+      height: 60px;
+      width: auto;
+    }
+
+    .brand-name {
+      font-size: 26px;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .page-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .signin-container {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .signin-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #007acc;
+    }
+
+    .signin-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    .signin-container button {
+      width: 100%;
+      background-color: #007acc;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .signin-container button:hover {
+      background-color: #005fa3;
+    }
+
+    .forgot {
+      text-align: right;
+      margin-top: -10px;
+      margin-bottom: 15px;
+    }
+
+    .forgot a {
+      color: #007acc;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .forgot a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Navigation -->
+  <div class="nav-bar">
+    <div class="branding">
+      <img src="images/Logo.jpg" alt="Fashion Hub Logo">
+      <span class="brand-name">Fashion Hub</span>
+    </div>
+    <nav>
+      <a href="about.html">About Us</a>
+      <a href="signup.html">Signup</a>
+      <a href="signin.html">Signin</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </div>
+
+  <!-- ✅ Centered Sign In Form -->
+  <div class="page-content">
+    <div class="signin-container">
+      <h2>Sign In</h2>
+      <form action="#" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <div class="forgot">
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ✅ Footer -->
+  <footer>
+    &copy; 2025 Fashion Hub | Designed by Shri Keerthanaa | Contact: fashionhub@email.com
+  </footer>
+
+</body>
+</html>
